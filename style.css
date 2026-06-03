@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f8f2;
+    color:#333;
+}
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#4CAF50;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2E7D32;
+    transform:scale(1.05);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h2{
+    color:#2E7D32;
+    font-size:2.2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+.estatisticas{
+    background:#2E7D32;
+    color:white;
+}
+
+.estatisticas .titulo h2{
+    color:white;
+}
+
+.numeros{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:50px;
+    text-align:center;
+}
+
+.numero{
+    min-width:180px;
+}
+
+.numero h3{
+    font-size:3rem;
+}
+
+#mensagem{
+    margin-top:20px;
+    text-align:center;
+    color:#2E7D32;
+    font-weight:bold;
+}
+
+footer{
+    background:#1B5E20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    .numero h3{
+        font-size:2.3rem;
+    }
+}
